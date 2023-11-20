@@ -6,6 +6,7 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  background: #F9FAFC;
 }
 
 nav {
@@ -73,15 +74,12 @@ li a:hover {
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 139px;
-  border: 2px solid;
-  height: 600px;
 }
 
 .basket-text {
   flex-basis: 40%;
 }
-
-.basket-text-h2 {
+.basket-text .basket-text-h2 {
   font-size: 80px;
   font-weight: 400;
   line-height: 75px; /* 93.75% */
@@ -98,22 +96,426 @@ li a:hover {
   display: flex;
   flex-basis: 40%;
 }
-
-.basket-img-er {
+.basket-img .basket-img-er {
   position: absolute;
   left: -250px;
   top: -80px;
+}
+.basket-img .basket-img-p {
+  color: #262626;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+.basket-img .basket-img-btn {
+  color: #E1E8F0;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 190% */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #262626;
+  cursor: pointer;
+  border: none;
+  margin-top: 36px;
+  display: inline-flex;
+  padding: 12px 32px;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .basket-conts {
   margin-top: 30px;
   flex-basis: 40%;
 }
-
-.basket-conts-cont1 {
+.basket-conts .basket-conts-btn {
+  color: #B8C2CE;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  display: inline-flex;
+  padding: 4px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  border: none;
+  margin-left: 150px;
+}
+.basket-conts .basket-conts-cont1 {
   background-image: url("./imgs/fastaccelerating-race-car-formula-one-racing-amid-sunset-generative-ai 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 34px;
   color: #FFF;
+  width: 270px;
+  height: 233px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: end;
+  margin-left: 150px;
+}
+.basket-conts .basket-conts-cont2 {
+  background-image: url("https://s3-alpha-sig.figma.com/img/e1d3/37b6/4341f3e6986a6d65cf29593ebed1d210?Expires=1701043200&Signature=WNxqEv9xwvEb~wd3Wt~DH6zjzzWIjigJ3PlznkxWS2FG~7smVTy7mjSF7QhHw1yDcFdgNPyFolTZ4OTsJVKJJEpnunxWo4t~ykH-VSoGnf9CaiJWMO55484prU9yiH8U8xMaAhvGyj8JUGyqqwDplQYw437Wi1aSSeYLdOyHBVhBStH26QlUa57Y1t-J8K6V~-WStMn6qy1K5KqCFYhpwBcao3QXq2fDzBDSrQe1HOc6OG2JjeywerP5uS2IKPJLAfSVhJ6kbTGNCWDnGH8bdFQA9CdjIGj4KLnkvLr4WFCVQTF3IEhXoAbMcW5CQacn5tMFvs-scMRUCk9qCjZsig__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 34px;
+  color: #FFF;
+  width: 270px;
+  height: 233px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: end;
+  margin-left: 150px;
+}
+.basket-conts .basket-conts-cont1-p {
+  padding-left: 18px;
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%; /* 10.09px */
+}
+.basket-conts .basket-conts-cont1-h2 {
+  border-radius: 6px;
+  padding-left: 18px;
+  color: #262626;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 410;
+  line-height: 123.9%; /* 19.824px */
+}
+
+@media (max-width: 1200px) {
+  .basket {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .basket-img-er {
+    opacity: 0.6;
+    z-index: -111;
+  }
+  .basket-conts {
+    margin: 0 auto;
+  }
+  .basket-conts-btn {
+    border-radius: 3px;
+    background: #7a7a7a;
+    color: #ffffff;
+    z-index: 11;
+  }
+}
+.cont {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.cont .section2 {
+  padding-top: 80px;
+  color: #262626;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 38px; /* 135.714% */
+}
+
+.grida {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1fr;
+  grid-template-areas: "football basket carsport tennis" "match basket car tennis" "match basketball car tabletennis";
+  align-items: center;
+  gap: 20px;
+}
+
+.div1 {
+  grid-area: football;
+  background-color: #EBEEF3;
+}
+.div1 .foot {
+  text-align: center;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 75px; /* 202.703% */
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div2 {
+  grid-area: match;
+}
+.div2 .imgee1 {
+  width: 270px;
+  height: 288px;
+  flex-shrink: 0;
+}
+
+.div3 {
+  grid-area: basket;
+}
+
+.div4 {
+  grid-area: basketball;
+  background-color: #EBEEF3;
+}
+.div4 .basket {
+  text-align: center;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 39px; /* 202.703% */
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div5 {
+  grid-area: carsport;
+  background-color: #EBEEF3;
+}
+.div5 .carsport {
+  text-align: center;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 39px; /* 105.405% */
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div6 {
+  grid-area: car;
+}
+
+.div7 {
+  grid-area: tennis;
+}
+
+.div8 {
+  grid-area: tabletennis;
+  background-color: #EBEEF3;
+}
+.div8 .table {
+  text-align: center;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 39px; /* 105.405% */
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tred {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  background: #EBEEF3;
+  margin-top: 80px;
+}
+
+.news {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.news .hours {
+  display: flex;
+  align-items: center;
+}
+.news .hours .hours-text {
+  padding-left: 20px;
+  width: 239px;
+  border-bottom: 1px solid;
+}
+.news .hours .hours-text .pre1 {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%; /* 10.09px */
+}
+.news .hours .hours-text .h33 {
+  color: #262626;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 136.9%; /* 24.642px */
+  padding-top: 4px;
+}
+.news .hours .hours-text .pre2 {
+  color: #696868;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.9%; /* 14.868px */
+  padding-top: 12px;
+}
+.news .bayscl {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.news .bayscl .bayscl-text {
+  padding-left: 20px;
+  width: 239px;
+  border-bottom: 1px solid;
+}
+.news .bayscl .bayscl-text .pre1 {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%; /* 10.09px */
+}
+.news .bayscl .bayscl-text .h33 {
+  color: #262626;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 136.9%; /* 24.642px */
+  padding-top: 4px;
+}
+.news .bayscl .bayscl-text .pre2 {
+  color: #696868;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.9%; /* 14.868px */
+  padding-top: 12px;
+}
+.news .boksarea {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.news .boksarea .boksarea-text {
+  padding-left: 20px;
+  width: 239px;
+}
+.news .boksarea .boksarea-text .pre1 {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%; /* 10.09px */
+}
+.news .boksarea .boksarea-text .h33 {
+  color: #262626;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 136.9%; /* 24.642px */
+  padding-top: 4px;
+}
+.news .boksarea .boksarea-text .pre2 {
+  color: #696868;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.9%; /* 14.868px */
+  padding-top: 12px;
+}
+
+.cycl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./imgs/sportsman-drinking-water-training-stationary-bike 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 570px;
+  height: 609px;
+  flex-shrink: 0;
+}
+.cycl .cycle {
+  color: #EBEEF3;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  display: flex;
+  width: 107.696px;
+  height: 36.088px;
+  padding: 29px 26px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+.cycl .cycle .pi {
+  border-radius: 3px;
+  border: 1px solid #EBEEF3;
+}
+.cycl .dis {
+  display: flex;
+  padding: 29px 26px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+.cycl .dis .h44 {
+  color: rgba(0, 0, 255, 0.752);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 435;
+  line-height: normal;
+  text-transform: capitalize;
+  gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .tred {
+    flex-direction: column;
+  }
+  .news {
+    flex-wrap: wrap;
+  }
+  .hours {
+    flex-direction: column;
+  }
+  .bayscl {
+    flex-direction: column;
+  }
+  .boksarea {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
